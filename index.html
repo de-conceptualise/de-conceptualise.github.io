@@ -1,47 +1,62 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
-  <head>
-    <title>Title - Profile</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300"
-          rel="stylesheet" type="text/css">
 
-    <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="css/site.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <header>
-      <h1>Title</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a class="target" href="index.html">Profile</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="cv.html">CV</a></li>
-      </ul>
-    </nav>
-    <article id="profile">
-      <img src="http://placehold.it/200x300/fd5/fff&text=profile+pic">
+<head>
+    
+  <title>Hello, world!</title>
+    
+  <meta charset="UTF-8" />
+    
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+  <meta name="description" content="" />
+    
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Phasellus consequat ligula ac mi pellentesque, at
-        tempor elit iaculis. Maecenas ut turpis finibus, convallis
-        ligula id, molestie nibh. Mauris vel metus a quam convallis
-        ultricies non sit amet ante. Nulla ac lorem a quam faucibus
-        sollicitudin. Nunc vulputate enim quis ex rutrum
-        rhoncus. Fusce nec mi pharetra, interdum augue vel,
-        efficitur urna.</p>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
 
-      <p>Mauris quam orci, varius non vestibulum ac, porta eu
-        turpis. Nam ultrices, ligula a rhoncus euismod, velit urna
-        malesuada tortor, vel sodales odio sapien maximus nunc. Ut
-        malesuada semper leo. Nam ac malesuada risus. Proin commodo
-        lobortis massa ut accumsan. Vivamus ac feugiat
-        ipsum. Aliquam in porta ligula, eget tempus elit.</p>
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+  <link rel="stylesheet" href="main.css">
 
-      <p>Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Sed sit amet massa
-        non nisl semper tincidunt quis sit amet lectus.</p>
-    </article>
-  </body>
+  <meta name="theme-color" content="#ffffff">
+
+    
+</head>
+    
+    
+
+<body>
+    <main>
+       
+        <section>
+            <p> (de)conceptualise is a graphic subversion practice of Pedro Gil Farias. Material provocations to question what is taken for granted and to imagine the unimaginable. 
+Shop: shop.deconceptualise.com</p>
+            <p>Work: <a href="journal.deconceptualise.com">work.deconceptualise.com</a></p>
+            <p>Shop: <a href="shop.deconceptualise.com">shop.deconceptualise.com</a></p>
+      </section>
+
+    </main>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    (function($){
+      $('.i-accept').on('click', function() {   
+        if(localStorage.noshow !== '1') {
+          $('#cookie-notice').addClass('d-none');
+           localStorage.noshow='1';
+        }  
+      });
+      if(localStorage.noshow == '1') {
+        $('#cookie-notice').addClass('d-none');
+      };
+    })(jQuery);
+  </script>
+    
+</body>
+
 </html>
