@@ -27,11 +27,11 @@ html {
  */
 
 body {
-  font-size: 2rem; /* 1 */
+  font-size: 1.5rem; /* 1 */
   font-weight: 400; /* 1 */
   background: #fff; /* 2 */
   color: #111; /* 2 */
-  font-family: Helvetica, Arial, sans-serif; /* 3 */
+  font-family:sans-serif; /* 3 */
 }
 
 /**
@@ -58,12 +58,16 @@ img {
  */
 
 main {
-  height: 100vh;
+    height: 100vh;
     width: 100vw;
      vertical-align:middle;
-    text-align: center;
     display: table-cell;
+margin: auto; /* 1 */
+  max-width: 50rem; /* 2 */
+  padding: 0 1rem; /* 2 */
+  width: 100%; /* 2 */
 }
+
 
 /**
  * 1. Add some padding around the header.
@@ -88,7 +92,7 @@ footer {
  */
 
 section {
-  padding: 4rem 0;
+  padding: 4rem;    
 }
 
 /**
@@ -343,59 +347,3 @@ hr {
 /**
  * Invert the colors if the user has dark mode activated.
  */
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #111;
-    color: #fff;
-  }
-  a,
-  input::placeholder,
-  textarea::placeholder {
-    color: #fff;
-  }
-  button,
-  input[type="button"],
-  input[type="reset"],
-  input[type="submit"],
-  input[type="email"],
-  input[type="number"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="text"],
-  input[type="url"],
-  textarea,
-  select,
-  progress {
-    background: #111;
-    color: #fff;
-    border-color: #fff;
-  }
-  button:disabled,
-  input[type="button"]:disabled,
-  input[type="reset"]:disabled,
-  input[type="submit"]:disabled{
-    color: #111;
-    background: #fff;
-  }
-  fieldset {
-    border-color: #fff;
-  }
-  td,
-  th,
-  blockquote,
-  pre,
-  hr {
-    border-color: #fff;
-  }
-  progress::-webkit-progress-bar {
-    background-color: #111;
-  }
-  progress::-webkit-progress-value {
-    background-color: #fff;
-  }
-  progress::-moz-progress-bar {
-    background-color: #fff;
-  }
-}
