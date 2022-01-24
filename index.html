@@ -15,7 +15,9 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,19 +33,79 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" style="max-width: 500px; margin-top: 20%">
-        <h1 style="font-weight: 900">(de)conceptualise</h1>
-        <p>(de)conceptualise is a graphic subversion practice of Pedro Gil Farias. Material provocations to question what is taken for granted and to imagine the unimaginable. 
+      <div class="container">
+          
+    <div class="row">
+     <div class="one columns" style="margin-top: 5%">
+        </div>
+      <div class="nine columns" style="margin-top: 5%">
+            <img class="mySlides" src="Images/Work/(de)_Democracy-Forever.jpg">
+            <img class="mySlides" src="Images/Work/2021-01-23-0011.jpg">
+            <img class="mySlides" src="Images/Work/ALTERNATIVE_print.JPG">
+            <img class="mySlides" src="Images/Work/ALTERNATIVE_print_detail%201.JPG">
+            <img class="mySlides" src="Images/Work/BLACKOUT_002_Detail.png">
+            <img class="mySlides" src="Images/Work/WORLD-VIEW_CANVAS-SQ.JPG">
+            <img class="mySlides" src="Images/Work/WORLD-VIEW_Detail_SQ.JPG">
+            <img class="mySlides" src="Images/Work/Climate-Fiction.jpg">
+            <img class="mySlides" src="Images/Work/Climate-Fiction-Detail_001.JPG">
+            <img class="mySlides" src="Images/Work/Disfruta-La-Fruta_Showcase.jpg">
+            <img class="mySlides" src="Images/Work/Divided,%20it%20has%20become%20clear-2.jpg">
+            <img class="mySlides" src="Images/Work/Export_07%20copy.jpg">
+            <img class="mySlides" src="Images/Work/FUTURE_print%20copy.JPG">
+            <img class="mySlides" src="Images/Work/Giving-up-Control.jpg">
+            <img class="mySlides" src="Images/Work/Identity-for-sale.jpg">
+            <img class="mySlides" src="Images/Work/IG%20poster.jpg">
+            <img class="mySlides" src="Images/Work/IMG_0169.png">
+            <img class="mySlides" src="Images/Work/IMG_0176-nobackground-Black.jpg">
+            <img class="mySlides" src="Images/Work/IMG_0950.jpg">
+            <img class="mySlides" src="Images/Work/INTERNET_Artprint.jpg">
+            <img class="mySlides" src="Images/Work/Paste-up_1.jpg">
+            <img class="mySlides" src="Images/Work/Stuck-in-the-Now_bg.jpg">
+        </div>
+         <div class="one columns" style="margin-top: 5%">
+        </div>
+    </div>
+          
+          <div class="row">
+      <div class="three columns" style="margin-top: 27px">
+                <img class="u-full-width" src="Images/Logo-Deconceptualise-08-08-08.jpg" style="max-width: 200px">
+        </div>
+         <div class="eight columns" style="margin-top: 20px">
+             <p><b>(de)conceptualise</b> is a graphic subversion practice of Pedro Gil Farias. Material provocations to question what is taken for granted and to imagine the unimaginable.</p>
+        </div>
+    </div>
+          
+          <div class="row">
+              <div class="three columns" style="margin-top: 1px">
+              </div>
+      <div class="four columns" style="margin-top: 1px">
+          <p><a href="journal.deconceptualise.com">Follow my work</a><br>(newsletter)</p>
+              </div>
+         <div class="four columns" style="margin-top: 1px">
+         <p><a href="shop.deconceptualise.com">Support my work</a><br>(online shop)</p>
             <br>
-            <a href="Work.html">Sample of my work</a>
-            <br> 
-            Journal: <a href="journal.deconceptualise.com">work.deconceptualise.com</a>
-            <br>
-            Shop: <a href="shop.deconceptualise.com">shop.deconceptualise.com</a>
-          </p>
-  </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 650); // Change image every 2 seconds
+    }
+    </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    </div>
+    </body>
 </html>
