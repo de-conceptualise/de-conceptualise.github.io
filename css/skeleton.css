@@ -353,7 +353,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 0.5rem; }
 
 
 /* Utilities
@@ -370,7 +370,8 @@ form {
   float: left; }
 
 .mySlides {
-  max-width: 100%;
+  max-width: 90%;
+  margin-bottom: 20px;
   box-sizing: border-box; }
 
 
@@ -388,7 +389,7 @@ hr {
 
 /* Self Clearing Goodness */
 .container:after,
-.row:after,
+.row.row:after,
 .u-cf {
   content: "";
   display: table;
